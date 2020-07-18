@@ -1,5 +1,7 @@
 const DEV_FETCH_SERVER_URL = 'http://localhost:8080/api'
-const PROD_FETCH_SERVER_URL = 'http://180.76.114.135:8080/api'
+// const PROD_FETCH_SERVER_URL = 'http://180.76.114.135:8080/api'
+const PROD_FETCH_SERVER_URL =
+  'https://api-strong-body-shuwan9.netlify.app/.netlify/functions/server/api'
 export const IS_DEV = process.env.NODE_ENV === 'development' ? true : false
 export const FETCH_SERVICE_URL = IS_DEV
   ? DEV_FETCH_SERVER_URL
